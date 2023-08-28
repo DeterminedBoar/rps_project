@@ -58,3 +58,12 @@ function playRound(computerSelection, playerSelection) {
     return result;
 };
 
+function game() {
+    console.log(playRound(getComputerChoice(), getPlayerChoice()));
+    console.log(playRound(getComputerChoice(), getPlayerChoice()));
+    console.log(playRound(getComputerChoice(), getPlayerChoice()));
+    console.log(playRound(getComputerChoice(), getPlayerChoice()));
+    console.log(playRound(getComputerChoice(), getPlayerChoice()));
+};
+
+console.log(game())
