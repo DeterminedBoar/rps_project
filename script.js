@@ -58,20 +58,20 @@ function playRound(computerSelection, playerSelection) {
     return result;
 };
 
-function game() {
-    console.log(playRound(getComputerChoice(), getPlayerChoice()));
-    console.log(playRound(getComputerChoice(), getPlayerChoice()));
-    console.log(playRound(getComputerChoice(), getPlayerChoice()));
-    console.log(playRound(getComputerChoice(), getPlayerChoice()));
-    console.log(playRound(getComputerChoice(), getPlayerChoice()));
-    let winner;
-    if (playerScore > computerScore) {
-        winner = "Player";
-    }
-    else {
-        winner = "Computer";
-    }
-    return "Winner is the " + winner;
-};
+// function game() {
+//     // console.log(playRound(getComputerChoice(), getPlayerChoice()));
+//     // console.log(playRound(getComputerChoice(), getPlayerChoice()));
+//     // console.log(playRound(getComputerChoice(), getPlayerChoice()));
+//     // console.log(playRound(getComputerChoice(), getPlayerChoice()));
+//     // console.log(playRound(getComputerChoice(), getPlayerChoice()));
+//     // let winner;
+//     // if (playerScore > computerScore) {
+//     //     winner = "Player";
+//     // }
+//     // else {
+//     //     winner = "Computer";
+//     // }
+//     // return "Winner is the " + winner;
+// };
 
-console.log(game())
+// console.log(game())
