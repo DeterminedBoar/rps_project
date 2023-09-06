@@ -1,0 +1,19 @@
+.btn {
+    font-size: 2.5rem;
+    width: 150px;
+    height: 150px;
+    color: white;
+    border-color: rgb(68, 68, 68);
+    border-radius: 16px;
+    border-style: solid;
+}
+
+.rock {
+    background-color: rgb(47, 146, 47);
+}
+.paper {
+    background-color: rgb(58, 58, 180);
+}
+.scissors {
+    background-color: rgb(156, 45, 45);
+}
