@@ -28,36 +28,40 @@ ul {
     border-style: solid;
 }
 
-.rock {
+.rounds-results {
+    text-align: center;
+}
+
+#rock {
     background-color: rgb(47, 146, 47);
 }
-.rock:hover {
+#rock:hover {
     cursor: pointer;
     background-color: rgb(100, 175, 100);
     transition: background-color 0.5s ease-out 0.25ms;
 }
-.rock:active {
+#rock:active {
     background-color: rgb(39, 70, 39);
 }
-.paper {
+#paper {
     background-color: rgb(58, 58, 180);
 }
-.paper:hover {
+#paper:hover {
     cursor: pointer;
     background-color: rgb(92, 92, 177);
     transition: background-color 0.5s ease-out 0.25ms;
 }
-.paper:active {
+#paper:active {
     background-color: rgb(55, 55, 107);
 }
-.scissors {
+#scissors {
     background-color: rgb(156, 45, 45);
 }
-.scissors:hover {
+#scissors:hover {
     cursor: pointer;
     background-color: rgb(153, 99, 99);
     transition: background-color 0.5s ease-out 0.25ms;
 }
-.scissors:active {
+#scissors:active {
     background-color: rgb(73, 35, 35);
 }
