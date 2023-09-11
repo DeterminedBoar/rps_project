@@ -8,6 +8,16 @@ ul {
     padding: 0;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.disabled {
+    opacity: 50% !important;
+    pointer-events: none;
+    cursor: not-allowed !important;
+}
+
 .container {
     text-align: center;
     margin: auto auto;
