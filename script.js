@@ -1,15 +1,18 @@
 let playerScore = 0;
 let computerScore = 0;
 let rounds = 0;
-let result = ""
 let winner = "";
 
 const rockBtn = document.querySelector("#rock");
 const paperBtn = document.querySelector("#paper");
 const scissorsBtn = document.querySelector("#scissors");
 
+let playerScoreText = document.querySelector(".player-score");
+let computerScoreText = document.querySelector(".computer-score");
 let resultP = document.querySelector(".round-results");
 
+playerScoreText.textContent = "Player score = " + playerScore;
+computerScoreText.textContent = "Computer score = " + computerScore;
 
 function getComputerChoice() {
     let numberChoice = Math.floor(Math.random() * 3) + 1;
@@ -28,6 +31,7 @@ function getComputerChoice() {
 
 
 function playRound(computerSelection, playerSelection) {
+    let result = ""
     switch (playerSelection !== computerSelection) {
         case (playerSelection == "Rock" && computerSelection == "Scissors"):
             result = "You Win! Rock beats Scissors!";
@@ -65,26 +69,25 @@ function playRound(computerSelection, playerSelection) {
     return result;
 };
 
+
+
 rockBtn.addEventListener("click", () => {
     let compChoice = getComputerChoice()
     resultP.textContent = playRound(compChoice, "Rock");
+    playerScoreText.textContent = "Player score = " + playerScore;
+    computerScoreText.textContent = "Computer score = " + computerScore;
 });
 paperBtn.addEventListener("click", () => {
     let compChoice = getComputerChoice()
     resultP.textContent = playRound(compChoice, "Paper");
+    playerScoreText.textContent = "Player score = " + playerScore;
+    computerScoreText.textContent = "Computer score = " + computerScore;
 });
 scissorsBtn.addEventListener("click", () => {
     let compChoice = getComputerChoice()
     resultP.textContent = playRound(compChoice, "Scissors");
+    playerScoreText.textContent = "Player score = " + playerScore;
+    computerScoreText.textContent = "Computer score = " + computerScore;
 });
 
-while (rounds >= 5) {
-    if (playerScore > computerScore) {
-        winner = "Player";
-    }
-    else {
-        winner = "Computer";
-    }
-    alert("Winner is " + winner);
-}
 
