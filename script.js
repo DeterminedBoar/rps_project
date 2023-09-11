@@ -76,10 +76,10 @@ function checkRounds() {
         paperBtn.classList.add("disabled");
         scissorsBtn.classList.add("disabled");
         if (playerScore > computerScore) {
-            winnerText.textContent += " Win!"
+            winnerText.textContent = "You Win!"
         }
         else {
-            winnerText.textContent += " Lose!"
+            winnerText.textContent = "You Lose!"
         }
     }
 }
